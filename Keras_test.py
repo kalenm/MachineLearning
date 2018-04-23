@@ -10,7 +10,7 @@ test_size = 150
 matches = 0
 
 dataset = np.loadtxt('pima.csv', delimiter=',')
-len(dataset)
+
 # Splitting the data into input and output variables
 X = dataset[:, 0:8]
 Y = dataset[:, 8]
@@ -48,4 +48,3 @@ for n in range(len(rounded)):
         matches = matches + 1
 
 print(matches/test_size)
-# Create split at start of file, select random values to test on
